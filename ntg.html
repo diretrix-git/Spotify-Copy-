@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hover Effect</title>
+  <style>
+    .box {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      border: 1px solid black;
+      overflow: hidden;
+    }
+
+    .box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .box p {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      color: white;
+    }
+
+    .hover-image{
+      position: absolute;
+      top: 80%;
+      /* margin-top: 60%; */
+      right: 10%;
+      width: 20%;
+      height: 20%;
+      opacity: 0;
+      transition: all 0.3s ease-in-out;
+      z-index: 2;
+    }
+
+    .box:hover .hover-image {
+      opacity: 1;
+      top: 60%;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <img src="media/album/bhikari.jpg" alt="Image">
+    <p>Image Title</p>
+    <div class="hover-image">
+      <img src="/spotify/media/browser-icon/spotify.jpg" alt="Hover Image">
+    </div>
+  </div>
+</body>
+</html>
