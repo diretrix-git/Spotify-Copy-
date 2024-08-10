@@ -4,19 +4,22 @@
   box-sizing: border-box;
   font-family: "jost";
 }
-
 body{
+    background-color: #000000;
+}
+.section{
     background-color: #000000;
     display: flex;
     justify-content: space-between;
-    /* grid-template-columns: 1fr 3fr; */
-    margin-top: 1em;
-    /* gap: 5px; */
+    margin-top: .5em;
 }
 
 /* left section start */
 .left-section{
-    margin-left: 1em;
+    margin-left: .5em;
+    width: 22%;
+    position: fixed;
+    z-index: 1;
 }
 /* spotify */
 .spotify{
@@ -26,7 +29,7 @@ body{
     cursor: pointer;
     margin-bottom: .5em;
     padding: 1em;
-    width: 27em;
+    /* width: 27em; */
 
 }
 .spotify h2{
@@ -46,7 +49,8 @@ body{
     cursor: pointer;
     /* z-index: 0; */
     margin-bottom: .5em;
-    width: 27em;
+    /* width: 27em; */
+    height: 70vh;
 }
 /* library nav start */
 .library-nav{
@@ -79,7 +83,7 @@ body{
     /* border: 1px solid white; */
     background-color: #1F1F1F;
     padding: 1em;
-    width: 25em;
+    width: 19em;
     margin-left: .5em;
     border-radius: 9px;
     /* z-index: 1;
@@ -104,7 +108,7 @@ body{
 /* libarary footer */
 footer{
     /* border: 1px solid white; */
-    width: 30em;
+    width: 25em;
     margin-top: 2em;
     font-weight:200 ;
     font-size: .8em;
@@ -116,36 +120,42 @@ footer{
 .second-line{
     display:flex ;
     gap: 25px;
-    padding-left: 2em;
+    padding-left: 1em;
     padding-top: 1em;
 
 }
 #playlist-cookies{
-    margin-left: 2em;
+    margin-left: 1em;
     padding-top: 1em;
 
 }
 /* right section start */
 .right-section{
-    width: 70%;
+    width: 77%;
+    margin-left: 23%;
+    height: 290vh;
+    background-color: #1D1D1D;
+    z-index: 1;
 }
 /* nav start */
 
 nav{
-    border-radius: 20px;
+    /* border-radius: 20px; */
     display: flex;
     justify-content: space-between;
     border: 1px solid black;
     align-items: center;
     height: 10vh;
     background-color: #101010;
-    /* position: fixed;
-    width: 50%; */
+    position: fixed;
+    width: 76%;
+    top: 0%;
+    z-index: 100;
 }
 
 .icons i{
     color: #B3B3B3;
-    font-size: 1.5em;
+    font-size: 1.35em;
     cursor: pointer;
     background-color: #090909;
     border-radius: 50%;
@@ -154,7 +164,6 @@ nav{
 .icons .ri-arrow-left-wide-line {
     margin-left: 2em;
     margin-right:.8em ;
-    height: 1.5em;
     width: 5em;
 }
 
@@ -162,7 +171,7 @@ nav{
     color: #B3B3B3;
     background-color: #101010;
     border: none;
-    font-size: 1.5em;
+    font-size: 1.2em;
     cursor: pointer;
 }
 .signup:hover{
@@ -172,19 +181,21 @@ nav{
     background-color: white;
     color: black;
     border: none;
-    border-radius: 10px;
+    border-radius: 30px;
     cursor: pointer;
-    padding: .2em .8em;
-    font: bolder;
+    padding: .5em 1em;
     margin: 2em;
-    font-size: 1.5em;
+    font-weight: 600;
+    font-size: 1.2em;
 }
 /* nav end */
 
 .body-part{
     background-color: #1D1D1D;
-    margin-top: -.8em;
+    /* margin-top: 5em; */
+    padding-top: 7em;
     margin-left: .1em;
+    /* margin-top: 0%; */
 }
 /* artist start */
 
@@ -221,28 +232,36 @@ nav{
     justify-content: space-evenly;
 }
 .artist-details img{
-    width: 100px; /* Adjust size as needed */
-    height: 100px; /* Ensure width and height are the same */
+    width: 140px; /* Adjust size as needed */
+    height: 140px; /* Ensure width and height are the same */
     border-radius: 50%;
-    object-fit: cover;
+    /* object-fit: cover; */
     cursor: pointer;
+    margin-left: 1em;
 }
 .artist-details p{
     color: #B3B3B3;
+    margin-left: 1em;
+
 }
 
 .artist-details h4{
     color: #FFFFFF;
+    margin-left: 1em;
 }
 
 .artist-details .johnrai {
     /* border: 1px solid white; */
-    width: 9em;
+    width: 11em;
     text-align: left;
     margin-bottom: 3em;
     margin-top: 2em;
+    transition: all ease .3s;
 }
-
+.artist-details .johnrai:hover{
+    transform: scale(1.02);
+    background-color: #363333;
+}
 /* artist end */
 
 /* album start */
@@ -273,10 +292,10 @@ nav{
 
 /* album details start */
 .album-details img{
-    width: 100px; /* Adjust size as needed */
-    height: 100px; /* Ensure width and height are the same */
+    width: 150px; /* Adjust size as needed */
+    height: 130px; /* Ensure width and height are the same */
     border-radius: 20pz;
-    object-fit: cover;
+    /* object-fit: cover; */
 }
 .album-details{
     display: flex;
@@ -292,8 +311,206 @@ nav{
 
 .album-details .tribalRain {
     /* border: 1px solid white; */
+    transition: all ease .3s;
+    width: 11em;
+    /* height: 13em; */
+    text-align: left;
+    margin-bottom: 3em;
+    margin-top: 2em;
+    padding:12px;
+}
+.album-details .tribalRain:hover{
+    transform: scale(1.02);
+    background-color: #363333;
+}
+/* artist end */
+
+/* Radio Start */
+/* radio nav start */
+.radio-nav{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2em;
+}
+.radio-nav h2 a{
+    color: white;
+    margin-left: 1em;
+    text-decoration: none;
+}
+.radio-nav h2 a:hover{
+    text-decoration:underline;
+}
+.radio-nav p a {
+    color:#B3B3B3 ;
+    margin-right: 1em;
+    text-decoration: none;
+
+}
+.radio-nav p a:hover{
+    text-decoration:underline;
+}
+/* radio details */
+.radio-details img{
+    width: 150px; /* Adjust size as needed */
+    height: 130px; /* Ensure width and height are the same */
+    border-radius: 2px;
+    /* object-fit: cover; */
+}
+.radio-details{
+    display: flex;
+    justify-content: space-evenly;
+}
+.radio-details p{
+    color: #B3B3B3;
+}
+
+.radio-details h4{
+    color: #FFFFFF;
+}
+
+.radio-details .bipul {
     width: 9em;
     text-align: left;
     margin-bottom: 3em;
     margin-top: 2em;
+    /* border: 1px solid white; */
+    padding: 10px;
+    width: 11em;
+    transition: all ease-out .2s;
+}
+
+.radio-details .bipul:hover{
+    transform: scale(1.05);
+    background-color: #363333;
+    color: white;
+}
+/* radio end */
+
+/* charts start */
+
+.charts-details img{
+    width: 150px; /* Adjust size as needed */
+    height: 110px; /* Ensure width and height are the same */
+    border-radius: 20pz;
+    object-fit: cover;
+}
+.charts-details{
+    display: flex;
+    justify-content: space-evenly;
+}
+.charts-details p{
+    color: #B3B3B3;
+}
+
+.charts-details h4{
+    color: #FFFFFF;
+}
+
+.charts-details .top {
+    /* border: 1px solid white; */
+    width: 9em;
+    text-align: left;
+    margin-bottom: 3em;
+    margin-top: 2em;
+}
+.charts-details .top{
+    /* border: 1px solid white; */
+    padding: 10px;
+    width: 11em;
+    transition: all ease .3s;
+
+}
+.charts-details .top:hover{
+    transform: scale(1.05);
+    background-color: #363333;
+    color: white;
+}
+/* footer */
+.right-footer{
+    display: flex;
+    border: 1px solid #2A2A2A;
+    width: 95%;
+    justify-content: space-between;
+    margin-left: 3em;
+    line-height: 2;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding-bottom: 5em;
+}
+
+.right-footer h2{
+    color: white;
+}
+
+.right-footer p a{
+    color: #B3B3B3;
+    font-size: 1.2em;
+    text-decoration: none;
+    font-weight: 500;
+}
+.right-footer p a:hover{
+    color: white;
+    text-decoration: underline;
+}
+/* .right-footer .company{
+    padding-left: 3em;
+} */
+.right-footer .footer-icons{
+    font-size: 1.5em;
+    /* border: 1px solid white; */
+    padding-top: .2em;
+    /* margin-right: 1em; */
+    color: white;
+}
+
+.right-footer .footer-icons i{
+    border-radius: 50%;
+    padding: 10px;
+    background-color:#292929 ;
+}
+
+.right-footer .footer-icons .ri-instagram-line:hover{
+    background-color: #727272;
+}
+.right-footer .footer-icons .ri-twitter-fill:hover{
+    background-color: #727272;
+}
+.right-footer .footer-icons .ri-facebook-circle-fill:hover{
+    background-color: #727272;
+}
+
+/* footer copy */
+.copy p {
+    color: #b3b3b3;
+    margin-top: 3em;
+    margin-left: 2.2em;
+}
+
+/* preview */
+.preview{
+    /* background: linear-gradient(45deg, #ff6f61, #6b5b95); */
+    background: linear-gradient(90deg, #AF2997, #5199F3);
+    display: flex;
+    position: fixed;
+    z-index: 10000;
+    bottom: 0;
+    justify-content: space-between;
+    /* border: 1px solid white; */
+    width: 100%;
+    padding: 10px;
+}
+.preview .left-preview h3{
+    font-weight: 400;
+}
+.preview .left-preview h4{
+    font-weight: 700;
+}
+
+.preview .signfree{
+    width: 12em;
+    border-radius: 30px;
+    font-size: 1.2em;
+    font-weight: 500;
+    
 }

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="icon" href="media/browser-icon/spotify.jpg" type="image/png">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Spotify Front Page</title>
@@ -18,6 +19,7 @@
     />
   </head>
   <body>
+    <div class="section">
     <!-- left section start -->
     <section class="left-section">
       <div class="spotify">
@@ -33,24 +35,22 @@
         </div>
 
         <div class="first-playlist">
-            <h3>Create your first playlist</h3>
-            <h4>It's easy, we'll help you</h4>
-            <button>
-                Create playlist
-            </button>
+          <h3>Create your first playlist</h3>
+          <h4>It's easy, we'll help you</h4>
+          <button>Create playlist</button>
         </div>
         <footer>
-            <div class="first-line">
+          <div class="first-line">
             <p>Legal</p>
             <p>Safety&Privacy Center</p>
             <p>Privacy Policy</p>
             <p>Cookies</p>
-        </div>
-        <div class="second-line">
+          </div>
+          <div class="second-line">
             <p>About Ads</p>
             <p>Accessibility</p>
-        </div>
-            <p id="playlist-cookies">Cookies</p>
+          </div>
+          <p id="playlist-cookies">Cookies</p>
         </footer>
       </div>
     </section>
@@ -74,12 +74,16 @@
         <div class="artist">
           <div class="artist-nav">
             <h2><a href="#">Popular articsts</a></h2>
-            <p><a href="https://open.spotify.com/section/0JQ5DAnM3wGh0gz1MXnu3C">Show all</a></p>
+            <p>
+              <a href="https://open.spotify.com/section/0JQ5DAnM3wGh0gz1MXnu3C"
+                >Show all</a
+              >
+            </p>
           </div>
 
           <div class="artist-details">
             <div class="johnrai">
-              <img src="/media/artist/pritam.jpg" alt="" id="pritam" />
+              <img src="/spotify/media/artist/pritam.jpg" alt="" id="pritam" />
               <h4>Pritam</h4>
               <p>Artist</p>
             </div>
@@ -121,7 +125,11 @@
         <div class="album">
           <div class="album-nav">
             <h2><a href="#">Popular albums</a></h2>
-            <p><a href="#">Show all</a></p>
+            <p>
+              <a href="https://open.spotify.com/section/0JQ5DAnM3wGh0gz1MXnu3B"
+                >Show all</a
+              >
+            </p>
           </div>
 
           <div class="album-details">
@@ -162,7 +170,169 @@
             </div>
           </div>
         </div>
+        <!-- album end -->
+
+        <!-- radio start -->
+        <div class="radio">
+          <div class="radio-nav">
+            <h2><a href="#">Popular albums</a></h2>
+            <p>
+              <a href="https://open.spotify.com/section/0JQ5DAnM3wGh0gz1MXnu3B"
+                >Show all</a
+              >
+            </p>
+          </div>
+
+          <div class="radio-details">
+            <div class="bipul">
+              <img src="/spotify/media/radio/bipul.jpg" alt="bipul cheetri" />
+              <h4>Bipul Cheetri Radio</h4>
+              <p>With Nepathya, Rohit John Cheetri,...</p>
+            </div>
+
+            <div class="bipul">
+              <img src="/spotify/media/radio/john.jpg" alt="john rai" />
+              <h4>John Rai Radio</h4>
+              <p>With Purna Rai, The Dreamcatchers,...</p>
+            </div>
+
+            <div class="bipul">
+              <img src="/spotify/media/radio/purna.jpg" alt="Purna Rai" />
+              <h4>Purna Rai Radio</h4>
+              <p>With John Rai,Axix, Outsiders,...</p>
+            </div>
+
+            <div class="bipul">
+              <img src="/spotify/media/radio/rockheads.jpg" alt="RockHeads" />
+              <h4>Rockheads Radio</h4>
+              <p>With Swar, Outsiders Nepal,...</p>
+            </div>
+
+            <div class="bipul">
+              <img
+                src="/spotify/media/radio/the-elements.jpg"
+                alt="The Elements"
+              />
+              <h4>The Elements Radio</h4>
+              <p>With Roackheads, Monkey Temple,...</p>
+            </div>
+
+            <div class="bipul">
+              <img
+                src="/spotify/media/radio/tribal-rain.jpg"
+                alt="Tribal Rain"
+              />
+              <h4>Tribal Rain Radio</h4>
+              <p>With RockHeads, Batika Eam...</p>
+            </div>
+          </div>
+        </div>
+        <!-- radio end -->
+
+        <!-- charts start -->
+        <div class="charts">
+          <div class="radio-nav">
+            <h2><a href="#">Popular albums</a></h2>
+            <p>
+              <a href="https://open.spotify.com/section/0JQ5DAnM3wGh0gz1MXnu3B"
+                >Show all</a
+              >
+            </p>
+          </div>
+
+          <div class="charts-details">
+            <div class="top">
+              <img src="/spotify/media/charts/netherlands.jpg" alt="netherlands" />
+              <h4>Top Songs - Netherlands</h4>
+              <p>Your weekly update of the most playe...</p>
+            </div>
+            
+            <div class="top">
+              <img src="/spotify/media/charts/sk50.jpg" alt="south korea" />
+              <h4>Top 50 - South Korea</h4>
+              <p>Your weekly update of the most playe...</p>
+            </div>
+            
+            <div class="top">
+              <img src="/spotify/media/charts/top.jpg" alt="top global" />
+              <h4>Top Songs - Globals</h4>
+              <p>Your weekly update of the most playe...</p>
+            </div>
+            
+            <div class="top">
+              <img src="/spotify/media/charts/top50.jpg" alt="Top 50 Globals" />
+              <h4>Top 50 - Globals</h4>
+              <p>Your weekly update of the most playe...</p>
+            </div>
+            
+            <div class="top">
+              <img src="/spotify/media/charts/usa.jpg" alt="top songs usa" />
+              <h4>Top Songs - USA</h4>
+              <p>Your weekly update of the most playe...</p>
+            </div>
+            
+            <div class="top">
+              <img src="/spotify/media/charts/usa50.jpg" alt="bipul cheetri" />
+              <h4>Top 50 - USA</h4>
+              <p>Your weekly update of the most playe...</p>
+            </div>
+            
+          </div>
+        </div>
+        <!-- charts end -->
+      </div>
+      <footer class="right-footer">
+        <div class="company">
+          <h2>Company</h3>
+          <p><a href="#">About</a></p>
+          <p><a href="#">Jobs</a></p>
+          <p><a href="#">For the record</a></p>
+        </div>
+        
+        <div class="communities">
+          <h2>Communities</h2>
+          <p><a href="#">For Artists</a></p>
+          <p><a href="#">Developers</a></p>
+          <p><a href="#">Advestising</a></p>
+          <p>I<a href="#">Investors</a></p>
+          <p><a href="#">Vendors</a></p>
+        </div>
+
+        <div class="links">
+          <h2>Useful Links</h2>
+          <p><a href="#">Support</a></p>
+          <p><a href="#">Free Mobile App</a></p>
+        </div>
+
+        <div class="plans">
+          <h2>Spotify Plans</h2>
+          <p><a href="#">Premium Individual</a></p>
+          <p><a href="#">Premium Duo</a></p>
+          <p><a href="#">Premium Family</a></p>
+          <p><a href="#">Premium Student</a></p>
+          <p><a href="#">Premium Free</a></p>
+        </div>
+
+        <div class="footer-icons">
+          <i class="ri-instagram-line"></i>
+          <i class="ri-twitter-fill"></i>
+          <i class="ri-facebook-circle-fill"></i>
+        </div>
+      </footer>
+      <div class="copy">
+        <p>&copy; 2024 Spotify AB
+        </p>
       </div>
     </section>
+  </div>
+<div class="preview">
+  <div class="left-preview" style="color: white;">
+  <h4>Preview of Spotify</h4>
+  <h3>Sign up to get unlimited songs and podcasts with occasional ads. No credit card needed</h3>
+</div>
+<button class="signfree">
+  Sign up free
+</button>
+</div>
   </body>
 </html>
